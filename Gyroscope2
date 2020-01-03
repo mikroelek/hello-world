@@ -1,0 +1,38 @@
+from sense_hat import SenseHat
+import time
+import Arrows
+s= SenseHat()
+
+
+while True:
+    pitch,roll,yaw=s.get_orientation().values()
+    acceleration=s.get_accelerometer_raw()
+    x=acceleration['x']
+    y=acceleration['y']
+    z=acceleration['z']
+    x=round(x,2)
+    y=round(y,2)
+    z=round(z,2)
+    print("x:{0},y:{1},z:{2}".format(x,y,z)) 
+   # print ("p=%s,r=%s,y=%s" %(pitch,roll,yaw))
+   # round(pitch,0)
+   # round(roll,0)
+    #round(yaw,0)
+    
+    if (pitch>90 and pitch <270) or (roll>90 and roll <270):
+        s.set_pixels( Arrows.piros_x() )
+    
+    elif pitch >40 and pitch <90:
+        s.set_pixels( Arrows.nyil_balra())
+       
+    elif pitch <320 and pitch >270:
+        s.set_pixels( Arrows.nyil_jobbra())
+        
+    elif roll >40 and roll<90:
+        s.set_pixels( Arrows.nyil_felfele())
+       
+    elif roll <320 and roll >270:
+        s.set_pixels( Arrows.nyil_lefele())
+    else:
+        s.set_pixels(Arrows.ures_matrix()) # Sebesseget kiirni
+    time.sleep(0.1)

@@ -24,6 +24,7 @@ A program elindítja az adatok naplózását a hozzájuk tartozó dátummal.
 Felborulás esetén Twitter üzentet küld erről.
 		
 *Egy lehetséges kimenet*
+
 	--------Ide jöhet egy sceenshot-------
 
 *Hibalehetőség*

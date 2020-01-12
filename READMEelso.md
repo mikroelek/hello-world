@@ -66,7 +66,7 @@ A program leállítása nem automatikus, mert egyéni döntés, meddig akarjuk h
 ```
 Az arrows.py függvény meghívásával és a kritikus dőlésszögek 50 fokra beállításával, jelzi ki az eszköz a dölés irányát, illetve a borulást.
 
-*insertdatabase*
+*insertdatabase.py*
 ```python
 	import mysql.connector
 	from datetime import datetime

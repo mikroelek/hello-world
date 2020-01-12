@@ -3,12 +3,12 @@
 
 #### Összefoglalás
 
-	Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balesetek megelőzése ellen. Kritikus dőlésszögeket beállítva, a Sense HAT-en elhelyezett LED-mátrix mutatja, merre dől az autó, és van lehetőség a jármű korrigálására, felborulva pedig egy segítségkérő Twitter üzenetet oszt meg. A program elindítását követően folyamatosan gyűjti az adatokat az eszköz egy helyi adatbázisba, amit grafikusan is megjelenít.
+Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balesetek megelőzése ellen. Kritikus dőlésszögeket beállítva, a Sense HAT-en elhelyezett LED-mátrix mutatja, merre dől az autó, és van lehetőség a jármű korrigálására, felborulva pedig egy segítségkérő Twitter üzenetet oszt meg. A program elindítását követően folyamatosan gyűjti az adatokat az eszköz egy helyi adatbázisba, amit grafikusan is megjelenít.
 
 #### Környezet
 
-	* Raspberry Pi, Sense HAT, .py futtatására alkalmas operációs rendszer (Linux).
-	* Egeret, billentyűzetet, monitort és internetet igényel.
+* Raspberry Pi, Sense HAT, .py futtatására alkalmas operációs rendszer (Linux).
+* Egeret, billentyűzetet, monitort és internetet igényel.
 	
 #### Használat
 

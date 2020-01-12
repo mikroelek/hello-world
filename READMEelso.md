@@ -26,7 +26,8 @@ Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balese
 	--------Ide jöhet egy sceenshot-------
 
 *Hibalehetőség*
-	A program leállítása nem autómatikus, mert egyéni döntés, meddig akarjuk használni. Abban az esetben, ha a programot huzamosabb ideig használjuk, a memória képes betelni és az adatokat nem rögzíteni az adatbázisba.
+
+A program leállítása nem autómatikus, mert egyéni döntés, meddig akarjuk használni. Abban az esetben, ha a programot huzamosabb ideig használjuk, a memória képes betelni és az adatokat nem rögzíteni az adatbázisba.
 
 ## Fejlesztői dokumentáció
 
@@ -51,15 +52,16 @@ Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balese
 *Fontos programrészek*
 	
 *Main.py*
-	'''python
-		...
-		if (pitch>90 and pitch <270) or (roll>90 and roll <270):
-			s.set_pixels( Arrows.piros_x() )
+
+'''python
+	...
+	if (pitch>90 and pitch <270) or (roll>90 and roll <270):
+		s.set_pixels( Arrows.piros_x() )
     
-		elif pitch >40 and pitch <90:
-			s.set_pixels( Arrows.nyil_balra())
-		...
-	'''
+	elif pitch >40 and pitch <90:
+		s.set_pixels( Arrows.nyil_balra())
+	...
+'''
 Az arrows.py függvény meghívásával és a kritikus dőlésszögek 50 fokra beállításával, jelzi ki az eszköz a dölés irányát, illetve a borulást.
 
 	*insertdatabase*

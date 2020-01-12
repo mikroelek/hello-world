@@ -12,29 +12,29 @@ Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balese
 	
 #### Használat
 
-	*A program indítása*
+*A program indítása*
 	
-		A program	
-			Ide kerül..
-		néven található.
+	A program	
+		Ide kerül..
+	néven található.
 
-	*A program eredménye*
-		A program elindítja az adatok naplózását a hozzájuk tartozó dátummal.
+*A program eredménye*
+	A program elindítja az adatok naplózását a hozzájuk tartozó dátummal.
 		Felborulás esetén Twitter üzentet küld erről.
 		
-	*Egy lehetséges kimenet*
-		--------Ide jöhet egy sceenshot-------
+*Egy lehetséges kimenet*
+	--------Ide jöhet egy sceenshot-------
 
-	*Hibalehetőség*
-		A program leállítása nem autómatikus, mert egyéni döntés, meddig akarjuk használni. Abban az esetben, ha a programot huzamosabb ideig használjuk, a memória képes betelni és az adatokat nem rögzíteni az adatbázisba.
+*Hibalehetőség*
+	A program leállítása nem autómatikus, mert egyéni döntés, meddig akarjuk használni. Abban az esetben, ha a programot huzamosabb ideig használjuk, a memória képes betelni és az adatokat nem rögzíteni az adatbázisba.
 
 ## Fejlesztői dokumentáció
 
 #### Környezet
-	* Raspberry Pi, Sense HAT, .py futtatására alkalmas operációs rendszer (Linux).
-	* Python III fordítóprogram.
-	* Internetwebcímhelye a grafikai megjelenítésre.
-	* Fejlesztői Twitter felhasználó az automatikus üzenetküldésre.
+* Raspberry Pi, Sense HAT, .py futtatására alkalmas operációs rendszer (Linux).
+* Python III fordítóprogram.
+* Internetwebcímhelye a grafikai megjelenítésre.
+* Fejlesztői Twitter felhasználó az automatikus üzenetküldésre.
 
 #### Forráskód
 	/globals.py 		- a változók inicializálása
@@ -48,19 +48,19 @@ Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balese
 
 #### Megoldás
 
-	*Fontos programrészek*
+*Fontos programrészek*
 	
-	*Main.py*
-		'''python
-			...
-			if (pitch>90 and pitch <270) or (roll>90 and roll <270):
-				s.set_pixels( Arrows.piros_x() )
+*Main.py*
+	'''python
+		...
+		if (pitch>90 and pitch <270) or (roll>90 and roll <270):
+			s.set_pixels( Arrows.piros_x() )
     
-			elif pitch >40 and pitch <90:
-			s	.set_pixels( Arrows.nyil_balra())
-			...
-		'''
-	Az arrows.py függvény meghívásával és a kritikus dőlésszögek 50 fokra beállításával, jelzi ki az eszköz a dölés irányát, illetve a borulást.
+		elif pitch >40 and pitch <90:
+			s.set_pixels( Arrows.nyil_balra())
+		...
+	'''
+Az arrows.py függvény meghívásával és a kritikus dőlésszögek 50 fokra beállításával, jelzi ki az eszköz a dölés irányát, illetve a borulást.
 
 	*insertdatabase*
 		'''python

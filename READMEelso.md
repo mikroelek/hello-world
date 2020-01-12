@@ -19,6 +19,7 @@ Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balese
 	néven található.
 
 *A program eredménye*
+
 A program elindítja az adatok naplózását a hozzájuk tartozó dátummal.
 Felborulás esetén Twitter üzentet küld erről.
 		

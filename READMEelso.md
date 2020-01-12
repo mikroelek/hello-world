@@ -55,14 +55,14 @@ A program leállítása nem autómatikus, mert egyéni döntés, meddig akarjuk 
 	
 *Main.py*
 
-'''python
+```python
 	...
 	if (pitch>90 and pitch <270) or (roll>90 and roll <270):
 		s.set_pixels( Arrows.piros_x() )
 	elif pitch >40 and pitch <90:
 		s.set_pixels( Arrows.nyil_balra())
 	...
-'''
+```
 Az arrows.py függvény meghívásával és a kritikus dőlésszögek 50 fokra beállításával, jelzi ki az eszköz a dölés irányát, illetve a borulást.
 
 *insertdatabase*

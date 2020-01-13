@@ -27,8 +27,10 @@ Leállítása kézi beavatkozást igényel.
 *Egy lehetséges kimenet*
 
 ![Kep1](https://i.imgur.com/hheDdPi.png)
-![Kep2](https://i.imgur.com/pwOY5SX.png)
+Futás közben is kapunk visszajelzést az aktuális értékekről.
 
+![Kep2](https://i.imgur.com/pwOY5SX.png)
+Egy kommunikációs csatornán keresztül válik publikusság a baleset.
 
 *Hibalehetőség*
 

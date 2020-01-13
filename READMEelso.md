@@ -3,7 +3,7 @@
 
 #### Összefoglalás
 
-Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balesetek megelőzése ellen. Kritikus dőlésszögeket beállítva, a Sense HAT-en elhelyezett LED-mátrix mutatja, merre dől az autó, és van lehetőség a jármű korrigálására, felborulva pedig egy segítségkérő Twitter üzenetet oszt meg. A program elindítását követően folyamatosan gyűjti az adatokat az eszköz egy helyi adatbázisba, amit grafikusan is megjelenít.
+Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balesetek megelőzése ellen. Kritikus dőlésszögeket beállítva, a Sense HAT-en elhelyezett LED-mátrix mutatja, merre dől az autó, és van lehetőség a jármű korrigálására, felborulva pedig egy segítségkérő Twitter üzenetet oszt meg. Az eszköz mindemellett képes arra, hogy hirtelen túl nagy G gyorsulást mérve azt feltételezze, hogy az autó ütközött, így ekkor az ütközésről fog tweetelni. A program elindítását követően folyamatosan gyűjti az adatokat az eszköz egy helyi adatbázisba, amit grafikusan is megjelenít.
 
 #### Környezet
 
@@ -15,7 +15,7 @@ Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balese
 *A program indítása*
 	
 	A program	
-		Ide kerül..
+		*Main.py*
 	néven található.
 
 *A program eredménye*

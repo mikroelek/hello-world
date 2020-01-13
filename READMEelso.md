@@ -22,6 +22,7 @@ Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balese
 
 A program elindítja az adatok naplózását egy lokális adatbázisba a hozzájuk tartozó dátummal, és képes mindezt grafikus ábrán megjeleníteni.
 Felborulás és ütközés esetén Twitter üzentet küld a problémáról.
+Leállítása kézi beavatkozást igényel.
 		
 *Egy lehetséges kimenet*
 

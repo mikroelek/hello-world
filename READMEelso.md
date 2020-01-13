@@ -94,12 +94,16 @@ A programban szükséges deklarálni a létrehozott adatbázis elérhetőségét
 Ezek után *formatted_date=now.strftime('%Y-%m-%d %H:%M:%S')*-el a megfelelő formátumban kapjuk meg a dátumot. A mérések eredményeit és idejét be kell illeszteni a még eddig üres adatbázisunkba. A *sql="""INSERT INTO adatok (datum,pitch,roll,yaw,backwardforward,rightleft,updown)* sora ezt mutatja. A *time.sleep()* függvénnyel állítottunk be 0.2 másodpercenkénti újabb mérést.
 
 *tweet.py*
-A segítségkérő üzenet létrehozásához készíteni kellett egy Developer Twitter Accountot, amihez különböző *kulcsokat*, *secret külcsokat*, *tokeneket*, és *secret tokeneket* kaptunk. Mindemellett az operációs rendszerre (Linux) telepíteni kellet egy tweep
+
+A segítségkérő üzenet létrehozásához készíteni kellett egy Developer Twitter Accountot, amihez különböző *kulcsokat*, *secret külcsokat*, *tokeneket*, és *secret tokeneket* kaptunk. Mindemellett az operációs rendszerre (Linux) telepíteni kellet egy tweepy nevű modult amivel kapcsilatba tudunk lépni a Twitterel a posztoláshoz.
 ```python
 	
 
 
 ```
+#### Hibák megoldása
+
+A Twitter API-ja nem engedélyezi kétszer, egymás után ugyan annak a szövegnek a tweetelését, erre egy *Status is duplicate* nevű hibaüzentet hozott fel. A probléma megoldására egy kritikus gyorsulási vagy dőlési szöget írattunk ki (a balesetnek megfelelően) a segélykérés után, ami *float*-ként lett megadva, így szinte bekövetkezhetetlen, hogy egymás után kétszer mérje ugyan azt az értéket. Továbbfejlesztésként ezt GPS koordinátákra cserélnénk, hogy a segítséget pontos helyre lehessen irányítani. Elég valószínűtlen kétszer, egymás után, ugyan azok a helyen felborulni és/vagy ütközni, ezért a tweeteléssel csak a tesztfázisban lehet hiba, ha egy helyen végezzük a tesztelést.
 
 #### Jövőbeli továbbfejlesztés
 

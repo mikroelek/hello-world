@@ -98,5 +98,6 @@ Ezek után *formatted_date=now.strftime('%Y-%m-%d %H:%M:%S')*-el a megfelelő fo
 #### Jövőbeli továbbfejlesztés
 
 A rendszer a probléma twittelése esetén egy értéket is visszaad a segítségkérő üzenet ütán, ezt egy GPS-modul segítségével koordinátákra lehet cserélni, hogy tudjuk, hol is történt a baleset.
+
 Havi támogatás keretein belül, egy Cloud SQL előfizetést létrehozni, és az adatbázist automatikusan feltölteni, hogy ne csak a lokális szerveren legyen elérhető, hanem online bármilyen eszközről, ugyanis egy esetleges ütközés eseten a Raspberry Pi használhatatlanná válik.
 	

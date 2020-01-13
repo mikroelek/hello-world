@@ -36,6 +36,14 @@ A program leállítása nem automatikus, mert egyéni döntés, meddig akarjuk h
 
 ## Fejlesztői dokumentáció
 
+#### Tervezés
+
+A projekt témájának kiválasztása során fontos tényező volt, hogy egy használható, és hasznos mikroprocesszor által vezérelt ötletet eszeljünk ki. Manapság folyamatosan közúti balesetek és az ezzel járó halálos áldozatok megdöbbentően nagy számú cikkekkeivel találkozunk szerte az interneten, újságokban és a televízióban is. Az általunk elkészített Autós Biztonsági Rendszer segítséget nyújt a balesetek megelőzésében és a gyorsabb reagálásban a segítség nyújtásához.
+
+#### Hibák megoldása
+
+A Twitter API-ja nem engedélyezi kétszer, egymás után ugyan annak a szövegnek a tweetelését, erre egy *Status is duplicate* nevű hibaüzentet hozott fel. A probléma megoldására egy kritikus gyorsulási vagy dőlési szöget írattunk ki (a balesetnek megfelelően) a segélykérés után, ami *float*-ként lett megadva, így szinte bekövetkezhetetlen, hogy egymás után kétszer mérje ugyan azt az értéket. Továbbfejlesztésként ezt GPS koordinátákra cserélnénk, hogy a segítséget pontos helyre lehessen irányítani. Elég valószínűtlen kétszer, egymás után, ugyan azok a helyen felborulni és/vagy ütközni, ezért a tweeteléssel csak a tesztfázisban lehet hiba, ha egy helyen végezzük a tesztelést.
+
 #### Környezet
 
 * Raspberry Pi, Sense HAT, .py futtatására alkalmas operációs rendszer (Linux).
@@ -104,9 +112,7 @@ A segítségkérő üzenet létrehozásához készíteni kellett egy Developer T
 
 
 ```
-#### Hibák megoldása
 
-A Twitter API-ja nem engedélyezi kétszer, egymás után ugyan annak a szövegnek a tweetelését, erre egy *Status is duplicate* nevű hibaüzentet hozott fel. A probléma megoldására egy kritikus gyorsulási vagy dőlési szöget írattunk ki (a balesetnek megfelelően) a segélykérés után, ami *float*-ként lett megadva, így szinte bekövetkezhetetlen, hogy egymás után kétszer mérje ugyan azt az értéket. Továbbfejlesztésként ezt GPS koordinátákra cserélnénk, hogy a segítséget pontos helyre lehessen irányítani. Elég valószínűtlen kétszer, egymás után, ugyan azok a helyen felborulni és/vagy ütközni, ezért a tweeteléssel csak a tesztfázisban lehet hiba, ha egy helyen végezzük a tesztelést.
 
 #### Jövőbeli továbbfejlesztés
 

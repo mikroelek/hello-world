@@ -12,6 +12,8 @@ Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balese
 	
 #### Használat
 
+Átlagos felhasználó számára az adatbázis lényegtelen, mivel ezt egy adatelemző fogja kiolvasni, aki ezáltal tudja modellezni a balesetet. A sofőrnek csupán elég az autóban elhelyezett Sense HAT LED-mátrixára figyelni, ami jelzi a dőlésirányt.
+
 *A program indítása*
 	
 	A program	

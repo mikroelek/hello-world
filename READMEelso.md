@@ -18,7 +18,7 @@ Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balese
 	
 	A program	
 		Main.py
-	néven található.
+	néven található, a /pi mappában.
 
 *A program eredménye*
 

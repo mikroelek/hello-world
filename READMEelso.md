@@ -91,5 +91,5 @@ Az arrows.py függvény meghívásával és a kritikus dőlésszögek 50 fokra b
 
 A programban szükséges deklarálni a létrehozott adatbázis elérhetőségét és szükséges a jelszót megadni a *mysql.connector.connect()* függvényben. A *mycursor=mydb.cursor()* és a *now=datetime.now()* függvényekkel a kurzort a helyére állítottuk és az időt beállítottuk.
 
-![Kep](file:///E:/%C3%81di/Egyetem/MEMPS/Kep.png)
+![Kep](https://i.imgur.com/hheDdPi.png)
 	

@@ -15,13 +15,13 @@ Biztonági rendszerünk autókba behelyezve védelmet nyújt az esetleges balese
 *A program indítása*
 	
 	A program	
-		*Main.py*
+		Main.py
 	néven található.
 
 *A program eredménye*
 
-A program elindítja az adatok naplózását a hozzájuk tartozó dátummal.
-Felborulás esetén Twitter üzentet küld erről.
+A program elindítja az adatok naplózását egy lokális adatbázisba a hozzájuk tartozó dátummal, és képes mindezt grafikus ábrán megjeleníteni.
+Felborulás és ütközés esetén Twitter üzentet küld a problémáról.
 		
 *Egy lehetséges kimenet*
 
@@ -34,10 +34,11 @@ A program leállítása nem automatikus, mert egyéni döntés, meddig akarjuk h
 ## Fejlesztői dokumentáció
 
 #### Környezet
+
 * Raspberry Pi, Sense HAT, .py futtatására alkalmas operációs rendszer (Linux).
 * Python III fordítóprogram.
 * Internetwebcímhelye a grafikai megjelenítésre.
-* Fejlesztői Twitter felhasználó az automatikus üzenetküldésre.
+* Internet és fejlesztői Twitter felhasználó az automatikus üzenetküldésre.
 
 #### Forráskód
 	/globals.py 		- a változók inicializálása
@@ -89,7 +90,13 @@ Az arrows.py függvény meghívásával és a kritikus dőlésszögek 50 fokra b
     		mydb.close()
 ```
 
-A programban szükséges deklarálni a létrehozott adatbázis elérhetőségét és szükséges a jelszót megadni a *mysql.connector.connect()* függvényben. A *mycursor=mydb.cursor()* és a *now=datetime.now()* függvényekkel a kurzort a helyére állítottuk és az időt beállítottuk.
+A programban szükséges deklarálni a létrehozott adatbázis elérhetőségét és szükséges a jelszót megadni a *mysql.connector.connect()* függvényben. A *mycursor=mydb.cursor()* és a *now=datetime.now()* függvényekkel az adatbázisba való írást és az időt beállítottuk.
+Ezek után *formatted_date=now.strftime('%Y-%m-%d %H:%M:%S')*-el a megfelelő formátumban kapjuk meg a dátumot. A mérések eredményeit és idejét be kell illeszteni a még eddig üres adatbázisunkba. A *sql="""INSERT INTO adatok (datum,pitch,roll,yaw,backwardforward,rightleft,updown)* sora ezt mutatja. A *time.sleep()* függvénnyel állítottunk be 0.2 másodpercenkénti újabb mérést.
 
 
+
+#### Jövőbeli továbbfejlesztés
+
+A rendszer a probléma twittelése esetén egy értéket is visszaad a segítségkérő üzenet ütán, ezt egy GPS-modul segítségével koordinátákra lehet cserélni, hogy tudjuk, hol is történt a baleset.
+Havi támogatás keretein belül, egy Cloud SQL előfizetést létrehozni, és az adatbázist automatikusan feltölteni, hogy ne csak a lokális szerveren legyen elérhető, hanem online bármilyen eszközről, ugyanis egy esetleges ütközés eseten a Raspberry Pi használhatatlanná válik.
 	

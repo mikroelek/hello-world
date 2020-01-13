@@ -93,7 +93,13 @@ Az arrows.py függvény meghívásával és a kritikus dőlésszögek 50 fokra b
 A programban szükséges deklarálni a létrehozott adatbázis elérhetőségét és szükséges a jelszót megadni a *mysql.connector.connect()* függvényben. A *mycursor=mydb.cursor()* és a *now=datetime.now()* függvényekkel az adatbázisba való írást és az időt beállítottuk.
 Ezek után *formatted_date=now.strftime('%Y-%m-%d %H:%M:%S')*-el a megfelelő formátumban kapjuk meg a dátumot. A mérések eredményeit és idejét be kell illeszteni a még eddig üres adatbázisunkba. A *sql="""INSERT INTO adatok (datum,pitch,roll,yaw,backwardforward,rightleft,updown)* sora ezt mutatja. A *time.sleep()* függvénnyel állítottunk be 0.2 másodpercenkénti újabb mérést.
 
+*tweet.py*
+A segítségkérő üzenet létrehozásához készíteni kellett egy Developer Twitter Accountot, amihez különböző *kulcsokat*, *secret külcsokat*, *tokeneket*, és *secret tokeneket* kaptunk. Mindemellett az operációs rendszerre (Linux) telepíteni kellet egy tweep
+```python
+	
 
+
+```
 
 #### Jövőbeli továbbfejlesztés
 

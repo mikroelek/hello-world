@@ -26,7 +26,9 @@ Leállítása kézi beavatkozást igényel.
 		
 *Egy lehetséges kimenet*
 
-![Kep](https://i.imgur.com/hheDdPi.png)
+![Kep1](https://i.imgur.com/hheDdPi.png)
+![Kep2](https://i.imgur.com/pwOY5SX.png)
+
 
 *Hibalehetőség*
 
